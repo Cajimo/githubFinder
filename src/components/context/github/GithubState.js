@@ -19,7 +19,7 @@ const GithubState = (props) => {
     loading: false,
   };
 
-  const [state, dispatch] = useReducer(GithubState, initialState);
+  const [state, dispatch] = useReducer(GithubReducer, initialState);
 
   // Search Users
   const searchUsers = async (text) => {
